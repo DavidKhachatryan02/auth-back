@@ -1,13 +1,13 @@
 const prisma = require("./services/prisma");
 const express = require("express");
-const cors = require("cors");
+// const cors = require("cors");
 const authRouter = require("./routes");
 const { errorHandler } = require("./errors");
 
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
 app.use("/auth", authRouter);
 app.use(errorHandler);
 
