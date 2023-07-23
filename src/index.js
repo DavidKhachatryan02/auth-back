@@ -5,6 +5,7 @@ const cors = require("cors");
 const { errorHandler } = require("./errors");
 
 const app = express();
+const APP_PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
@@ -12,8 +13,6 @@ app.use("/auth", authRouter);
 app.use(errorHandler);
 
 const main = async () => {
-  const APP_PORT = 3000;
-
   try {
     await prisma.$connect();
 
