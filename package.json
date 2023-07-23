@@ -31,5 +31,8 @@
     "type": "git",
     "url": "git+https://github.com/DavidKhachatryan02/auth-back.git"
   },
-  "author": "David Khachatryan <davo-davo-dav@bk.ru>"
+  "author": "David Khachatryan <davo-davo-dav@bk.ru>",
+  "engines": {
+    "node": "18.x"
+  }
 }
